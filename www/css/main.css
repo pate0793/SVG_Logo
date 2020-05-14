@@ -1,0 +1,63 @@
+
+body{background-color:#ffcec9;  
+    height:700px; 
+    width: 1080px; 
+    overflow: hidden;}
+
+.cls-2{fill:#c1272d;}
+.cls-3{fill:#c69c6d;}
+.cls-4{fill:#42210b;}
+.cls-5{fill:#61696b;}
+.cls-6{fill:#f7931e;}
+.cls-7{fill:#8c6239;}
+.cls-8{fill:#d4001d;}
+.cls-9{fill:#008900;}
+.cls-10{fill:#bf0005;}
+.cls-11{fill:#21aa00;}
+.cls-12{fill:#859c6d;}
+#svg-icon{
+
+    position: relative;
+    left: 45%;
+    top: 15%;
+}
+#Food-basket{
+    transform: translateY(0);
+    animation: Food-basket 2s ease infinite alternate;
+}
+#Scooter{
+    transform: translateY(0);
+    animation: scooter 2s ease infinite alternate;
+}
+#strip{
+    transform: translateX(0);
+	
+}
+#bump{
+    fill: none;
+	stroke: #000;
+	stroke-width: 6px;
+    stroke-linecap: round;
+}
+#road{
+
+    transform: translateX(0);
+    animation: road 2s ease infinite alternate;
+    
+}
+@keyframes road{
+	0%{transform: translateX(0px);}
+	100%{transform: translateX(-100px);}
+}
+@keyframes scooter{
+	0%{transform: translateY(0px);}
+    50%{transform: translateY(-15px);}
+    100%{transform: translateY(0px);}
+}
+@keyframes Food-basket{
+    0%{transform: translate(0px,0px); rotate: (0deg);}
+    25%{transform: translate(0px,-8px); rotate: (5deg);}
+    50%{transform: translate(5px,-15px); rotate:(-5deg);}
+    75%{transform: translate(0px,-8px); rotate: (5deg);}
+    100%{transform: translate(0px,0px);rotate:(0deg)}
+}
